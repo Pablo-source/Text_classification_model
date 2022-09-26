@@ -4,7 +4,7 @@
 
 # Targets: how to build pipelines in R
 
-This is a new project to practise and learn how to use Targets pcakge to automate pipelines in R. I will start testing it with univariate time series models.
+This is a new project to practise and learn how to use Targets package to automate pipelines in R. I will start testing it with univariate time series models.
 
 It allows to practise several skills: 
 
