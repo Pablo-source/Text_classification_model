@@ -28,10 +28,10 @@ Dealing with imbalanced data
 
 I will use some text examples from Harry Potter books, using several variables from its characters and also some text quotes in Tidymodels I will build a small classification model based on this data. 
 
--	Themis package in R to deal with imbalanced data
+- We use Themis package in R to deal with imbalanced data
 https://github.com/tidymodels/themis
 
-The Themis package makes use of the Recipes package
+Themis package makes use of the Recipes package
 -	With recipes, you can use DPLYR like pipeable sequences of feature engineering steps to get your data ready for modelling.
 -	The easiest way to get recipes is to install all of the tidy models packages
 https://www.tidymodels.org/packages/
