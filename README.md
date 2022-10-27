@@ -7,6 +7,7 @@
 This is a new project to practise and learn how to use Targets package to automate pipelines in R. I will start testing it with univariate time series models.
 
 I will use some text examples from Harry Potter books to conducting the analysis, based on several variables from its characters and their text quotes in the book. Tidymodels package is the framework chosen to build a small classification model based on this data.
+https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
 
 It allows to practise several skills: 
 
