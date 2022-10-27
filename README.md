@@ -6,6 +6,8 @@
 
 This is a new project to practise and learn how to use Targets package to automate pipelines in R. I will start testing it with univariate time series models.
 
+I will use some text examples from Harry Potter books to conducting the analysis, based on several variables from its characters and their text quotes in the book. Tidymodels package is the framework chosen to build a small classification model based on this data.
+
 It allows to practise several skills: 
 
 - Fuunctions building 
@@ -26,9 +28,7 @@ Dealing with imbalanced data
 -	Classification model using imbalanced data
 -	This is a small example on how to use Targets to create and run a classification predictive model where the distribution of examples across the classes is not equal.
 
-I will use some text examples from Harry Potter books, using several variables from its characters and also some text quotes in Tidymodels I will build a small classification model based on this data. 
-
-- We use Themis package in R to deal with imbalanced data
+We use Themis package in R to deal with imbalanced data
 https://github.com/tidymodels/themis
 
 Themis package makes use of the Recipes package
