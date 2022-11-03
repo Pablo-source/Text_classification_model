@@ -21,6 +21,8 @@ https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
 # Testing a small text classification model using Targets 
 The aim of this project is to use  Targets package to setup a small text classification model using Tidymodels and Themis packages.
 
+Classifcation predictive models involve predicting a class label for a given observation
+
 ### Dealing with imbalanced data 
 -	When dealing with a classification data set with skewed class proportions is called imbalanced data. 
 -	Within this data set we find two types of imbalanced data classes:
