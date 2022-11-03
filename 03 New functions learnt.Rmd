@@ -1,0 +1,85 @@
+---
+title: "Functions learntParallel processing"
+author: "PLR"
+date: "02/10/2022"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Set of R built in functions I have learnt 
+
+In this video Andrew Couch uses the folllowing set of functions
+
+### 1. Join multiple strings into one string [str_c()]
+
+The funciton str_c() allows us to Join multiple strings into one string. it is part of the stringr package in the tidyverse framework.
+
+First we load the tidyverse framework
+
+-   [tidyverse website]<https://www.tidyverse.org/packages/>
+
+
+```{r load tidyverse package,echo=FALSE,message = TRUE,warning=FALSE}
+library(tidyverse)
+```
+
+#### 1.1 Join multiple strings into one string [str_c(), stringr package, tidyverse]
+
+We want to test specifically the following piece of code: 
+
+```{r str_c code example,eval=FALSE,message=FALSE}
+    summarise(text = str_c(Sentence, sep = " ",collapse = " "))
+```
+
+Tip: To display code in markdown that we dont' want to be run we include eval=FALSE in the knitr code chunk options.
+
+Let's test it with a dummy data set
+
+```{r data test, echo=TRUE}
+char = c("Harry James Potter","Harry James Potter", "Harry James Potter", "Harry James Potter", "Harry James Potter")
+house = c("Gryffindor","Gryffindor","Gryffindor","Gryffindor","Gryffindor")    
+quote = c("Thank you.,","Excuse me, who are you?","Sorry, no.","Learnt what?","I'm a what?")  
+
+Harryq = cbind.data.frame(char,house,quote)
+Harryq
+```
+
+
+#### 1.2 Group all quotes into a row of text using collapse()
+  
+
+We can use DPLYR to group all quotes from Harry Potter into a single string of text.
+  
+We have to take the following steps
+  
+  - 1. Group sentences by character 
+  - 2. Then assign the concatenated content of quote variable to a new text variable
+  
+str_c arguments: 
+
+- sep: String to insert between input vectors.
+- collapse: Optional string used to combine output into single string. Generally better to use str_flatten() if you 
+needed this behaviour.
+
+As we want to summarize all quotes from same character into **one row** we need to use **collapse = " "** to do it.
+
+```{r str_c first approach, echo=TRUE}
+
+sumtext <- Harryq %>% 
+           group_by(char) %>% 
+           summarise(text = str_c(quote, sep = " ",collapse = " "))
+sumtext
+```
+  
+### 2. Create initial train test split [initial_split(), rsample package]
+
+First we load the tidyverse framework
+
+-   [rsample website]<https://rsample.tidymodels.org/>
+
