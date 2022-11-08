@@ -15,11 +15,12 @@ It allows us to practise several skills:
 
 At a later stage in development I will combine the output of this pipeline example with a Shiny dashboard
 
+# Testing a small text classification model using Targets 
+
+The aim of this project is to use  Targets package to setup a small text classification model using Tidymodels and Themis packages.
+
 I will use some text examples from Harry Potter books to conducting the analysis, based on several variables from its characters and their text quotes in the book. Tidymodels package is the framework chosen to build a small classification model based on this data.
 https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
-
-# Testing a small text classification model using Targets 
-The aim of this project is to use  Targets package to setup a small text classification model using Tidymodels and Themis packages.
 
 Classifcation predictive models involve predicting a class label for a given observation
 
