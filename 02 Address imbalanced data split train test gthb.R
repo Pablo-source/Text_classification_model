@@ -105,8 +105,16 @@ library(tidymodels)
 [rsample website]<https://rsample.tidymodels.org/>
 
 # And we perform the train test split 
+# initial_split(): creates a single binary split of the data into training and test sets. Arguments: 
+#       prop: proportion data retained for analysis (I follow the 80/20 rule).80% of initial set assigned to Train data and 20% to Test data
+#       strata: A variable in the data set used to conduct stratified sampling. Stratified random sampling is done by dividing the entire population into homogeneous groups called strata, 
+#               I have used House in the step_upsample() formula, so I choose that same variable for my re-sampling. As we have dealt with unbalanced classess at this stage. 
+# I have also split my train data using vfolc_cv() function to perform a v fold cross validation of the train test sampling performed.
+
 set.seed(20)
 data_split <- initial_split(df3, prop = .8, strata = House)
 data_train <- training(data_split)
 data_test <- testing(data_split)
 train_k_folds <- vfold_cv(data_train)
+
+
