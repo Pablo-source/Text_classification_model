@@ -37,6 +37,8 @@ https://github.com/tidymodels/themis
 
 Themis package makes use of the Recipes package
 -	With recipes, you can use DPLYR like pipeable sequences of feature engineering steps to get your data ready for modelling.
+- Also we make use of the specific library **textrecipes**, it contain extra steps for the recipes package for preprocessing text data.
+https://github.com/tidymodels/textrecipes
 -	The easiest way to get recipes is to install all of the tidy models packages
 https://www.tidymodels.org/packages/
 
