@@ -26,8 +26,8 @@ Classifcation predictive models involve predicting a class label for a given obs
 
 ```mermaid
   graph TD;
-      OriginalSet-->Train;
-      OriginalSet--->Test;
+      OriginaTextSet-->Train;
+      OriginaTextSet--->Test;
       Train-->Apply_classification_models;
       Test-->Test_classification_model_accuracy;
 ```
