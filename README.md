@@ -26,8 +26,8 @@ Classifcation predictive models involve predicting a class label for a given obs
 
 ```mermaid
   graph TD;
-      A-->B;
-      A-->C;
+      OriginalSet-->Train;
+      OriginalSet--->Test;
       B-->D;
       C-->D;
 ```
