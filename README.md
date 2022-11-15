@@ -22,7 +22,7 @@ The aim of this project is to use  Targets package to setup a small text classif
 I will use some text examples from Harry Potter books to conducting the analysis, based on several variables from its characters and their text quotes in the book. Tidymodels package is the framework chosen to build a small classification model based on this data.
 https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
 
-Classifcation predictive models involve predicting a class label for a given observation
+Classifcation models predicting a class label for a given observation
 
 ```mermaid
   graph TD;
