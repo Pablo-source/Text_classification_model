@@ -28,8 +28,8 @@ Classifcation predictive models involve predicting a class label for a given obs
   graph TD;
       OriginalSet-->Train;
       OriginalSet--->Test;
-      B-->D;
-      C-->D;
+      Train-->Apply_classification_models;
+      Test-->Test_classification_model_accuracy;
 ```
 
 ### Dealing with imbalanced data 
