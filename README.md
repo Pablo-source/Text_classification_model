@@ -24,6 +24,14 @@ https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
 
 Classifcation predictive models involve predicting a class label for a given observation
 
+```mermaid
+  graph TD;
+      Split original set-->Train;
+    Split original set-->Test;
+      B-->D;
+      C-->D;
+```
+
 ### Dealing with imbalanced data 
 -	When dealing with a classification data set with skewed class proportions is called imbalanced data. 
 -	Within this data set we find two types of imbalanced data classes:
