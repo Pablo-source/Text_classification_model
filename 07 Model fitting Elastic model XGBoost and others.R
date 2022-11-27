@@ -8,6 +8,10 @@
 
 # We always start by using a simple model
 
+# Using parsnip package, we can define the engine and the mode
+# set_mode() parameter: A character string for the model type (e.g "classification)
+# It can also be used for other type of models such as regression models set_mode("regression")
+
 # 7.1 Simple model: Elastic net model. IT is an original lasso-regression model, where on top of that 
 # you penalize some terms to be zero
 
