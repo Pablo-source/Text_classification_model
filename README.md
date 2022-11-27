@@ -28,26 +28,25 @@ As a way to learn text classifications models, I will follow this video from And
 1. **Load .csv data**
 2. **Summarize Dialogue by character**
 3. Address class imbalance  
-- 4. Create initial train test split
-- 5. Build matrix to count number of words by character
-- 5.1 Apply naive tokenization to our TRAIN and TEST sets 
-- 6. **PRE-PROCESSING**
-- 6.1. Tokenization
-- 6.2. Remove stop-words
-- 6.3. Create a token folder whre max_tokens is (75)
-- 6.4. Then we compute the tfidf() algorithm
-- 7. **MODEL FITTING**
-- 7.1 Simple model: Elastic net model.
-- 7.2 Complex model. XGBOOST MODEL. This is a specific type of TREE model
-- 8. **MODEL PARAMETERS TUNING**
-- 8.1 Elastic model parameters tuning
-- 8.1.1 elastic grid_regular() set of parameters chosen using dials package  
-- 8.1.2 elastic grid_ma_entropy() set of parameters chosen using dials package 
-- 8.2 XGBOOST model parameters tuning 
-- 8.2.1 XGBOOST grid_regular() set of parameters chosen using dials package  
-- 8.2.2 XGBOOST grid_max_entropy() set of parameters chosen using dials package 
-
-### 9. Compare data structures from both models using a regular gird 
+4. Create initial train test split
+5. Build matrix to count number of words by character
+5.1 Apply naive tokenization to our TRAIN and TEST sets 
+6. **PRE-PROCESSING**
+6.1. Tokenization
+6.2. Remove stop-words
+6.3. Create a token folder whre max_tokens is (75)
+6.4. Then we compute the tfidf() algorithm
+7. **MODEL FITTING**
+7.1 Simple model: Elastic net model.
+7.2 Complex model. XGBOOST MODEL. This is a specific type of TREE model
+8. **MODEL PARAMETERS TUNING**
+8.1 Elastic model parameters tuning
+8.1.1 elastic grid_regular() set of parameters chosen using dials package  
+8.1.2 elastic grid_ma_entropy() set of parameters chosen using dials package 
+8.2 XGBOOST model parameters tuning 
+8.2.1 XGBOOST grid_regular() set of parameters chosen using dials package  
+8.2.2 XGBOOST grid_max_entropy() set of parameters chosen using dials package 
+9. Compare data structures from both models using a regular gird 
 
 
 
