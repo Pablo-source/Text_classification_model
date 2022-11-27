@@ -55,4 +55,4 @@ xgboost_entropy_grid
 XGBOOST_grid_max_entropy_params  <- grid_regular(extract_parameter_set_dials(xgboost_model))
 XGBOOST_grid_max_entropy_params
 
-### 9. Compare data structures from both models using a regular gird
+### 9. Compare data structures from both models using a regular grid
