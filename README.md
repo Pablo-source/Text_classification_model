@@ -25,9 +25,9 @@ As a way to learn text classifications models, I will follow this video from And
 
 ## Classification model using parallel processing analysis steps
 
-- 1. **Load .csv data**
-- 2. **Summarize Dialogue by character**
-- 3. Address class imbalance  
+1. **Load .csv data**
+2. **Summarize Dialogue by character**
+3. Address class imbalance  
 - 4. Create initial train test split
 - 5. Build matrix to count number of words by character
 - 5.1 Apply naive tokenization to our TRAIN and TEST sets 
