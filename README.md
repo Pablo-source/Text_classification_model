@@ -19,6 +19,12 @@ At a later stage in development I will combine the output of this pipeline examp
 
 The aim of this project is to use  Targets package to setup a small text classification model using Tidymodels and Themis packages.
 
+As a way to learn text classifications models, I will follow this video from Andrew Couch:
+- **Andrew Couch** *TidyTuesday: Improving Model Train Times with TidyModels*
+- https://www.youtube.com/watch?v=MVQExXGooaM&t=187s
+
+And in the process I will explore new models and test many of the functions he uses to conduct his analysis
+
 I will use some text examples from Harry Potter books to conducting the analysis, based on several variables from its characters and their text quotes in the book. Tidymodels package is the framework chosen to build a small classification model based on this data.
 https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
 
