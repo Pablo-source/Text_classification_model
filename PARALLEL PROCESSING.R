@@ -322,7 +322,7 @@ expensive_wf <- workflow() %>%
   # Here we add the more expensive recipe
   add_recipe(exp_rec, blueprint = sparse_bp)
 
-# train time for this expensive pre-processing
+# train time for this expensive pre-processing 
 begin <- Sys.time()
 
 expensive_res <- tune_grid(expensive_wf,
@@ -330,7 +330,7 @@ expensive_res <- tune_grid(expensive_wf,
                            resamples = train_k_folds)
 end3 <- Sys.time() - begin
 Tune_expensive_res <-  Sys.time() - begin
-
+Tune_expensive_res
 
 # 10 A different way of tuning your model
 # You don't use a grid, instead you use a Bayesian approach

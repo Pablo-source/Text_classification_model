@@ -1,8 +1,6 @@
 
-##  Created previously a project called TARGETS package.Rproj to contain all project analysis outputs and inputs
-
 # 00 Set project folder structure for Targets pipeline project
-
+# To save and store all input and output files for this text classification project
 Project_setup <- function(){ 
 
     if(!dir.exists("data")){dir.create("data")}  
