@@ -343,3 +343,47 @@ bayes_res <- tune_bayes(
 )
 end4 <- Sys.time() - begin
 Tune_bayes_res <-  Sys.time() - begin
+
+
+# 11 PARALLEL PROCESSING
+# Start by loading "doParallel" library
+# References
+# https://cran.r-project.org/web/packages/doParallel/vignettes/gettingstartedParallel.pdf
+
+
+# doParallel package
+# Function: makeCluster{parallel}
+# Create a Parallel Scocket Cluster
+# Description
+# Creates a set of copies of R running in parallel and communicating over sockets
+
+# makePSOCKcluster() function
+# makePSOCKcluster(names, ...)
+# makePSOCKcluster is an enhanced version of makeSOCKcluster in package snow. It runs Rscript on the specified host(s) to set up a worker process which listens on a socket for expressions to evaluate, and returns the results (as serialized objects).
+# names: Either a character vector of host names on which to run the worker copies of R, 
+#        or a positive integer (in which case that number of copies is run on localhost).
+# We choose to run 4 copies of R
+
+
+# To register doParallel to be used with foreach, you must call the registerDoParallel function.
+# If you call this with no arguments, on Windows you will get three workers and on Unix-like systems
+# you will get a number of workers equal to approximately half the number of cores on your system
+
+library(doParallel)
+
+cl <- makePSOCKcluster(4)
+cl <- registerDoParallel(cl)
+
+# Compare parallel processing
+begin <- Sys.time()
+
+# It is a tune grid, so we use control_grid()
+tune_grid(correct_wf,
+          grid = elastic_grid,
+          resamples = train_k_folds,
+          control = control_grid(allow_par = TRUE, parallel_over = "everything"))
+
+end5 <- Sys.time() - begin
+end5
+# Time difference of 10.17503 secs
+
