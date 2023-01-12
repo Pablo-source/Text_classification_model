@@ -59,14 +59,11 @@ https://www.kaggle.com/datasets/balabaskar/harry-potter-books-corpora-part-1-7
 Classifcation models predicting a class label for a given observation
 
 ```mermaid
-
-  graph TD;
-      OriginaTextSet-->Train;
-      OriginaTextSet--->Test;
-      Train-->Apply_classification_models;
-      Test-->Test_classification_model_accuracy;
-      Train-->Best_model_based_on_accuracy_measures;
-      Test --> Model training times for comparison;
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
 
 ### Dealing with imbalanced data 
