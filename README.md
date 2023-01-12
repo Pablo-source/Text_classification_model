@@ -68,7 +68,7 @@ graph TD;
     Choose_model_based_shortest_time --> Plot_models_running_times;
 ```
 
-### Dealing with imbalanced data 
+### Dealing with imbalanced data  
 -	When dealing with a classification data set with skewed class proportions is called imbalanced data. 
 -	Within this data set we find two types of imbalanced data classes:
 -	Classes that make the largest proportion of the data are defined as majority classes
