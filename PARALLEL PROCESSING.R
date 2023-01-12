@@ -388,3 +388,30 @@ tune_grid(correct_wf,
 end5 <- Sys.time() - begin
 end5
 # Time difference of 10.17503 secs
+# Then we stop the cluster
+stopImplicitCluster()
+
+# Models training times comparison  
+
+Train_times < cbind.data.frame(
+  train_times = c(end1,end2,end3,end4,end5),
+  train_desc =c("Naive","Matrix","Expensive","Bayes","Parallel")
+  )
+
+Models_training_times <- ggplot(Train_times, aes ( x = train_desc, y = train_times)) +
+  geom_bar (stat = "identity", fill = "cornflowerblue") +
+  coord_flip() +
+  labs (title = "Different models train times",
+        subtitle = "Seconds")
+
+Models_training_times
+
+ggsave(paste0("Models_training_times",".jpeg"),width = 30, height = 20, dpi = 150, units = "cm")
+
+# This has been an example on how to create models and tuning them using tidy models framework
+
+
+
+
+
+
