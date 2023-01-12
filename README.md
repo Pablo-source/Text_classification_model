@@ -65,6 +65,7 @@ graph TD;
     Train-->Apply_classification_models;
     Test-->Get_model_running_times;
     Train --> Choose_model_based_shortest_time;
+    Choose_model_based_shortest_time --> Plot_models_running_times;
 ```
 
 ### Dealing with imbalanced data 
