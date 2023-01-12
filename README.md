@@ -65,7 +65,7 @@ Classifcation models predicting a class label for a given observation
       Train-->Apply_classification_models;
       Test-->Test_classification_model_accuracy;
       Train-->Best_model_based_on_accuracy_measures;
-      Test --> Model training times for comparison
+      Test --> Model training times for comparison;
 ```
 
 ### Dealing with imbalanced data 
@@ -85,4 +85,11 @@ Themis package makes use of the Recipes package
 https://github.com/tidymodels/textrecipes
 -	The easiest way to get recipes is to install all of the tidy models packages
 https://www.tidymodels.org/packages/
+
+### Training times model comparison
+
+The aim of this small project was to practise how to tune different models using Tidy models framework. At the end we obtain the different training times depending on the model we have used. 
+
+This plot can be useful in future models to quicly assess model performance
+![Models_training_times](https://user-images.githubusercontent.com/76554081/212029051-096854bb-4e0a-4869-b560-5976a391c398.jpeg)
 
