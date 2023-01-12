@@ -60,10 +60,11 @@ Classifcation models predicting a class label for a given observation
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Original_text_set-->Train;
+    Original_text_set-->Test;
+    Train-->Apply_classification_models;
+    Test-->Get_model_running_times;
+    Train --> Choose_model_based_shortest_time;
 ```
 
 ### Dealing with imbalanced data 
