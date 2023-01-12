@@ -30,9 +30,9 @@
 # 9.2 tokenize all these words, and convert them into a matrix
 # 9.3 Tune both models
 ## 9.4 Compare expensive pre-processing to normal pre-processing
-# 10 A different way of tuning your model
+# 10 Bayesian customization
 # You don't use a grid, instead you use a Bayesian approach
-
+# 11 PARALLEL PROCESSING
 
 # Load required packages
 # ("tidyverse", "tidymodels", "textrecipes", "themis")
@@ -322,7 +322,7 @@ expensive_wf <- workflow() %>%
   # Here we add the more expensive recipe
   add_recipe(exp_rec, blueprint = sparse_bp)
 
-# train time for this expensive pre-processing 
+# train time for this expensive pre-processing
 begin <- Sys.time()
 
 expensive_res <- tune_grid(expensive_wf,
@@ -330,10 +330,13 @@ expensive_res <- tune_grid(expensive_wf,
                            resamples = train_k_folds)
 end3 <- Sys.time() - begin
 Tune_expensive_res <-  Sys.time() - begin
-Tune_expensive_res
+
 
 # 10 A different way of tuning your model
+# Bayesian model
+# This time you don't provide your model with a parameter grid
 # You don't use a grid, instead you use a Bayesian approach
+# When this model doesn't improve further after several re samples, it stops training
 
 begin <- Sys.time()
 bayes_res <- tune_bayes(
@@ -343,7 +346,6 @@ bayes_res <- tune_bayes(
 )
 end4 <- Sys.time() - begin
 Tune_bayes_res <-  Sys.time() - begin
-
 
 # 11 PARALLEL PROCESSING
 # Start by loading "doParallel" library
@@ -386,4 +388,3 @@ tune_grid(correct_wf,
 end5 <- Sys.time() - begin
 end5
 # Time difference of 10.17503 secs
-
