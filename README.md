@@ -65,6 +65,7 @@ Classifcation models predicting a class label for a given observation
       Train-->Apply_classification_models;
       Test-->Test_classification_model_accuracy;
       Train-->Best_model_based_on_accuracy_measures;
+      Test --> Model training times for comparison
 ```
 
 ### Dealing with imbalanced data 
