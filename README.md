@@ -93,3 +93,11 @@ The aim of this small project was to practise how to tune different models using
 This plot can be useful in future models to quicly assess model performance
 ![Models_training_times](https://user-images.githubusercontent.com/76554081/212029051-096854bb-4e0a-4869-b560-5976a391c398.jpeg)
 
+## TS Forecasting model using ARIMA model
+
+This second example is a Time Series model using ARIMA to forecast 7 days AE Type I Attendances in England. I will create the model and use Targets to build a pipeline to run it. 
+
+- TS 01. Start by importing the data and turning it into a TS object
+
+![TS_AE_TYPE_I_ATT_AUTOPLOT](https://user-images.githubusercontent.com/76554081/215439850-a7a8ae35-ebb2-4488-bf3a-b83301c75b81.png)
+
