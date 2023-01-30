@@ -42,7 +42,7 @@ AE_major_ts
 # We plot our TS series using autoplot function
 # autoplot is part of the ggplot2 library.
 # We need a TS object to be intered in the autoplot() function
-install.packages("TSstudio")
+#install.packages("TSstudio")
 library(TSstudio)
 
 ts_info(AE_major_ts)
@@ -62,7 +62,20 @@ ts_plot(AE_major_ts,
         Ytitle = "Daily Attendances",
         slider = TRUE)
 
-# 03.02 TS decomposition  
+# 03.02 TS decomposition   
 # WIP
+# Include TS decomposition 
 
-Include
+# type	
+# Set the type of the seasonal component, 
+# can be set to either "additive", "multiplicative" or "both" 
+# to compare between the first two options (default set to “additive”)
+
+ts_decompose(AE_major_ts, type = "additive", showline = TRUE)
+ts_decompose(AE_major_ts, type = "multiplicative", showline = TRUE)
+ts_decompose(AE_major_ts, type = "both", showline = TRUE)
+
+# 03.03 Seasonal plot
+# Seasonal plot
+ts_seasonal(AE_major_ts, type = "all")
+
