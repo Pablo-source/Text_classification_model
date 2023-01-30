@@ -15,6 +15,12 @@ It allows us to practise several skills:
 
 At a later stage in development I will combine the output of this pipeline example with a Shiny dashboard
 
+# Using targets on two models
+
+- 1. Text classification model using elastic and XGBOOST models
+- 2. Time Series model using ARIMA to predict 7 days AE Type I Attendances
+
+
 # Testing a small text classification model using Targets 
 
 The aim of this project is to use  Targets package to setup a small text classification model using Tidymodels and Themis packages.
