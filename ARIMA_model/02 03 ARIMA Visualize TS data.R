@@ -62,12 +62,5 @@ ts_plot(AE_major_ts,
         Ytitle = "Daily Attendances",
         slider = TRUE)
 
-autoplot(AE_major_ts) +
-           xlab("Time series") + ylab("Daily Attendances") +
-           ggtitle("AE Type I monthly Attendances.England. Aug 2010, Apr 2019") +
-           theme(plot.title = element_text(hjust=0.5),
-                              panel.grid.major = element_blank(),
-                              axis.line = element_line (colour = "blue"))
-
 # 03.02 TS decomposition  
 # WIP
