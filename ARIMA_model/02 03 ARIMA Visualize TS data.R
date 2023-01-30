@@ -57,10 +57,12 @@ ts_plot(AE_major_ts)
 # We can customize how the initial TS plot
 
 ts_plot(AE_major_ts,
-          title = "AE Type I monthly Attendances.England. Aug 2010, Apr 2019",
+        title = "AE Type I monthly Attendances.England. Aug 2010, Apr 2019",
         Xtitle = "Date", 
         Ytitle = "Daily Attendances",
         slider = TRUE)
 
 # 03.02 TS decomposition  
 # WIP
+
+Include
