@@ -105,5 +105,11 @@ This second example is a Time Series model using ARIMA to forecast 7 days AE Typ
 
 - TS 01. Start by importing the data and turning it into a TS object
 
+Using TSstudio library https://ramikrispin.github.io/TSstudio/
+
+library(TSstudio)
+
+ts_plot (AE_major_ts)
+
 ![TS_AE_TYPE_I_ATT_AUTOPLOT](https://user-images.githubusercontent.com/76554081/215439850-a7a8ae35-ebb2-4488-bf3a-b83301c75b81.png)
 
