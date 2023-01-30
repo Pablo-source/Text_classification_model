@@ -61,9 +61,11 @@ AE_rename_vars <- AE_data_subset_clean %>%
                         ) 
 AE_rename_vars
 
-# 4. Keep type_1_Major attendances for our first ARIMA model .
-
+# 4. Keep type_1_Major attendances for our first ARIMA model . 
+ 
 AE_major <- AE_rename_vars %>% 
             select (period,
                     Major_att = type_1_Major_att)
 AE_major
+
+# Write out this subset of data as .csv file
