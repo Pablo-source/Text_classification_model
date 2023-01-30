@@ -1,7 +1,4 @@
-
 # Demand forecasting using ARIMA
-
-
 #Searching for the href HTML tag we can find the corresponding .xls file to import it into R
 #<p><a href="https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/11/Timeseries-monthly-Unadjusted-9kidr.xls">Unadjusted: Monthly A&amp;E Time series April 2019 (XLS, 364K)</a><br />
 
