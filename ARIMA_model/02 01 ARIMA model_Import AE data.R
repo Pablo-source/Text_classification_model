@@ -3,6 +3,15 @@
 #<p><a href="https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/11/Timeseries-monthly-Unadjusted-9kidr.xls">Unadjusted: Monthly A&amp;E Time series April 2019 (XLS, 364K)</a><br />
 
 
+# A&E Attendances and Emergency Admissions
+# The Weekly and Monthly A&E Attendances and Emergency Admissions collection collects the total number of attendances in the specified period for all A&E types, including Minor Injury Units and Walk-in Centres, and of these, the number discharged, admitted or transferred within four hours of arrival.
+# Also included are the number of Emergency Admissions, and any waits of over four hours for admission following decision to admit.
+# Data are shown at provider organisation level, from NHS Trusts, NHS Foundation Trusts and Independent Sector Organisations.
+
+# https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+
+# 1 Import CSV A&E Attendances and Emergency Admissions data downloading it directly from NHS England websie using file URL
+
 # This is an .xls file extension, Excel 97-Excel 2003 Workbook , The Excel 97 - Excel 2003 Binary file format (BIFF8).
 # We can import both .xls and .xlsx file using download.file() function from readxl package
 
