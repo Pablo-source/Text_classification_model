@@ -122,4 +122,8 @@ ts_plot (AE_major_ts)
 
 ![TS_decomp_Seasonality](https://user-images.githubusercontent.com/76554081/216552754-dd20ff47-8f2d-4880-b78e-69503a41d773.png)
 
+- **TS 04. Heatmap plot describing AE Type I Attendances variation across months for 2010-2019 period**
+
+![Attendances Heatplot](https://user-images.githubusercontent.com/76554081/216664075-806307c3-1702-4bd7-92f3-470f8f6f7e09.png)
+
 
