@@ -17,7 +17,6 @@ Max_date
 # Transform AE_Type_I_Major_Attendances into a TS object
 
 
-# 03 
 # 01-03TS plot 
 
 # ts function Parameters
@@ -44,6 +43,7 @@ AE_major_ts
 # We need a TS object to be intered in the autoplot() function
 #install.packages("TSstudio")
 library(TSstudio)
+library(tidyverse)
 
 ts_info(AE_major_ts)
 
@@ -62,7 +62,8 @@ ts_plot(AE_major_ts,
         Ytitle = "Daily Attendances",
         slider = TRUE)
 
-# 03.02 TS decomposition   
+# 02-03 TS Decomposition 
+
 # WIP
 # Include TS decomposition 
 
@@ -80,6 +81,8 @@ ts_decompose(AE_major_ts, type = "both", showline = TRUE)
 ts_seasonal(AE_major_ts, type = "all")
 
 
-# Heatmap plot
+# 03-03 Heatmap plot
+# We can also produce a heatmap of the AE_major_ts data set 
+ts_heatmap(AE_major_ts)
 
-ts_heatmap(USgas)
+ggsave("TS_plots/TS_Heatmap.png", width = 6, height = 4) 
