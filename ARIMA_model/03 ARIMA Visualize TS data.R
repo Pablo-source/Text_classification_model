@@ -17,7 +17,8 @@ Max_date
 # Transform AE_Type_I_Major_Attendances into a TS object
 
 
-# 03.01 TS plot 
+# 03 
+# 01-03TS plot 
 
 # ts function Parameters
 # frequency = The number of observations per unit of time
@@ -78,3 +79,7 @@ ts_decompose(AE_major_ts, type = "both", showline = TRUE)
 # Seasonal plot
 ts_seasonal(AE_major_ts, type = "all")
 
+
+# Heatmap plot
+
+ts_heatmap(USgas)
