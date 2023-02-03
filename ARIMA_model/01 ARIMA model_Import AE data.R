@@ -36,8 +36,3 @@ AE_data <- function()   {
 }
 # Download A&E data function (no arguments)
 AE_data()
-<<<<<<< HEAD:ARIMA_model/01 ARIMA model_Import AE data.R
-
-head(AE_data)
-=======
->>>>>>> c947c64feeeab0af58579f01ce2db16b5078a0a5:ARIMA_model/02 01 ARIMA model_Import AE data.R

@@ -1,5 +1,5 @@
 # 02 02 ARIMA AE Att data prep
-# 02 02 ARIMA AE attendances and admissions data preparation
+# ARIMA AE attendances and admissions data preparation
 
 # 1. Load required packages
 pacman::p_load(readxl,here,dplyr,janitor)

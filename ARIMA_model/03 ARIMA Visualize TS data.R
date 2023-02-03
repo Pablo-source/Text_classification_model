@@ -1,7 +1,6 @@
-# 02 03 Visualize type_1_Major Attendances 
+# 03 ARIMA Visualize TS data.R  
 
 # Keep type_1_Major attendances for our first ARIMA model . 
-
 AE_major <- AE_rename_vars %>% select (period,Major_att = type_1_Major_att)
 AE_major
 
