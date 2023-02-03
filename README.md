@@ -113,3 +113,13 @@ ts_plot (AE_major_ts)
 
 ![TS_AE_TYPE_I_ATT_AUTOPLOT](https://user-images.githubusercontent.com/76554081/215439850-a7a8ae35-ebb2-4488-bf3a-b83301c75b81.png)
 
+- TS 02. Check for trend seasonallity and other regular patterns. 
+- Decompose original TS into (Random,Sesonal, Trend, Observed components). Using Additive and multiplicative ts
+
+![TS_decomposition_multi_additive](https://user-images.githubusercontent.com/76554081/216552584-70b88113-d603-43c8-9350-e3fe1dc15e96.png)
+
+- TS 03. Seasonal plot to check for Seasonality by Frequency Unit and Cycle
+
+![TS_decomp_Seasonality](https://user-images.githubusercontent.com/76554081/216552754-dd20ff47-8f2d-4880-b78e-69503a41d773.png)
+
+
