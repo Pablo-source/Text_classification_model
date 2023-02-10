@@ -7,7 +7,7 @@
 library(TSstudio)
 library(tidyverse) 
 
-# Display correlation analysis 
+# Display correlation analysis in a new plot
 ts_cor(AE_major_ts)
 
 # Split initial AE_majot_ts into TRAIN, TEST sets
@@ -25,4 +25,5 @@ library(here)
 here()
 write.csv(train,here("ARIMA_model","Train_test_split","AE_TYPEI_train.csv"), row.names = TRUE)
 write.csv(test,here("ARIMA_model","Train_test_split","AE_TYPEI_test.csv"), row.names = TRUE)
+
 
