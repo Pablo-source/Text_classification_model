@@ -166,4 +166,4 @@ test_forecast(actual = AE_major_ts, forecast.obj = fc, test = test)
 
 ![ARIMA plotly interactive plot](https://user-images.githubusercontent.com/76554081/218144771-18b9255f-f444-4a82-bed3-03fb494c277d.png)
 
-This is an interactive Plotly chart that can explore to explore RMSE and MAPE accuracy measures as tooltips on top of the standard actual and forecasted values produed by the ARIMA model.
+This is an interactive Plotly chart that can be used to explore RMSE and MAPE accuracy measures as tooltips on top of the standard actual and forecasted values produed by the ARIMA model.
