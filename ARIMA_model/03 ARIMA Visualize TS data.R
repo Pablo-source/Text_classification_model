@@ -85,4 +85,5 @@ ts_seasonal(AE_major_ts, type = "all")
 # We can also produce a heatmap of the AE_major_ts data set 
 ts_heatmap(AE_major_ts)
 
-ggsave("TS_plots/TS_Heatmap.png", width = 6, height = 4) 
+ggsave("TS_plots/TS_Heatmap.png", width = 6, height = 4)   
+
