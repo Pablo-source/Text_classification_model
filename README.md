@@ -126,4 +126,19 @@ ts_plot (AE_major_ts)
 
 ![Attendances Heatplot](https://user-images.githubusercontent.com/76554081/216664075-806307c3-1702-4bd7-92f3-470f8f6f7e09.png)
 
+- **TS 04. Correlationa analysis** 
+- This section will also use the "AE_major_ts" data set to explore the ACF and PACF plots to assess seasonal lags in the TS data
+
+![TS_AE_Type_I_Attendances_ACF_PCF_plots](https://user-images.githubusercontent.com/76554081/218140883-f178c7a5-4b65-417a-865b-03969f672720.png)
+
+- We can plot on which lag there is strong correlation to re-affirm what we can observe in the ACF and PACF plots about the strong seasonality in lag12
+
+![TS_AE_type_I_lag_plots](https://user-images.githubusercontent.com/76554081/218141231-aa9186dc-5929-400f-8ec1-fd773be2fc87.png)
+
+By looking into which plot we observe a linear relationship with previous lag numbers we can assess how many different trend and seasonality patters are present in our AE Type I Attendances data
+
+![TS_AE_TypeI_several_lags_plots](https://user-images.githubusercontent.com/76554081/218141461-72e723fb-a662-4ef4-8fd0-b30d5ff0c253.png)
+
+
+
 
