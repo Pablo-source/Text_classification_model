@@ -101,6 +101,8 @@ This plot can be useful in future models to quicly assess model performance
 
 ## TS Forecasting model using ARIMA model
 
+### TS seasonality and correlation analysis of AE Attendances Type I data
+
 This second example is a Time Series model using ARIMA to forecast 7 days AE Type I Attendances in England. I will create the model and use Targets to build a pipeline to run it. 
 
 - **TS 01. Start by importing the data and turning it into a TS object**
@@ -140,5 +142,28 @@ By looking into which plot we observe a linear relationship with previous lag nu
 ![TS_AE_TypeI_several_lags_plots](https://user-images.githubusercontent.com/76554081/218141461-72e723fb-a662-4ef4-8fd0-b30d5ff0c253.png)
 
 
+### ARIMA model using auto.arima() function after initial test train split of AE Attendances Type I data
+
+We use the ts_split() functin to obtain our train and test sets
+
+AE_major_ts_split <- ts_split(
+  ts.obj = AE_major_ts, sample.out = 12)
+
+train <- AE_major_ts_split$train
+test <- AE_major_ts_split$test
+
+And then we forecast 12 months into the future using ARIMA. The outcome is an **interactive** plotly chart, so it is important to run this code and interact with the chart that the above code produces.
+
+library(forecast)
+md <- auto.arima(train)
+fc <- forecast(md, h = 12)
+
+# Plotting actual vs. fitted and forecasted
+test_forecast(actual = AE_major_ts, forecast.obj = fc, test = test)
+
+
+![ARIMA_model_AE_ATT_Actual_vs_forecasted](https://user-images.githubusercontent.com/76554081/218144756-c3dea46f-b343-4e4b-bb7d-4eacee6362f5.png)
+
+![ARIMA plotly interactive plot](https://user-images.githubusercontent.com/76554081/218144771-18b9255f-f444-4a82-bed3-03fb494c277d.png)
 
 
