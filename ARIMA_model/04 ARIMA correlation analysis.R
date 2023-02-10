@@ -10,3 +10,8 @@ library(tidyverse)
 # Display correlation analysis 
 
 ts_cor(AE_major_ts)
+
+## 05 Lag plots
+# We can plot on which lag there is strong correlation to re-affirm what we can
+# observe in the ACF and PACF plots
+ts_lags(AE_major_ts, lags = 1:12)
