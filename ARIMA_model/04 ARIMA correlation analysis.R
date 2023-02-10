@@ -15,3 +15,8 @@ ts_cor(AE_major_ts)
 # We can plot on which lag there is strong correlation to re-affirm what we can
 # observe in the ACF and PACF plots
 ts_lags(AE_major_ts, lags = 1:12)
+
+## 06 Seasonal lags plot
+# Seasonal lags plot
+# We specify how many lags we want to analyse in our script
+ts_lags(AE_major_ts, lags = c(12, 24, 36, 48))
