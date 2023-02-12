@@ -11,7 +11,7 @@ if(!require('TSstudio')) {
 library(forecast)
 data(USgas)
 
-# Set the horizon of the forecast
+# Set the horizon of the forecast 
 h <- 12
 
 # split to training/testing partition
