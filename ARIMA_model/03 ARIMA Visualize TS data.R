@@ -1,4 +1,6 @@
 # 03 ARIMA Visualize TS data.R  
+library(TSstudio)
+library(tidyverse)
 
 # Keep type_1_Major attendances for our first ARIMA model . 
 AE_major <- AE_rename_vars %>% select (period,Major_att = type_1_Major_att)
@@ -17,7 +19,7 @@ Max_date
 # Transform AE_Type_I_Major_Attendances into a TS object
 
 
-# 01-03TS plot 
+# 01 TS plot 
 
 # ts function Parameters
 # frequency = The number of observations per unit of time
