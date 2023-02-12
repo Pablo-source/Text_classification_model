@@ -35,6 +35,8 @@ Max_date
 # End will be Apr 2019 (2019,4)
 library(tidyverse)
 
+
+# 01 TS object
 AE_major_ts <- ts(AE_major[,2], start = c(2010, 8), end = c(2019, 4), frequency = 12)
 AE_major_ts
 
@@ -62,7 +64,7 @@ ts_plot(AE_major_ts,
         Ytitle = "Daily Attendances",
         slider = TRUE)
 
-# 02-03 TS Decomposition 
+# 02 TS Decomposition 
 
 # WIP
 # Include TS decomposition 
@@ -76,12 +78,12 @@ ts_decompose(AE_major_ts, type = "additive", showline = TRUE)
 ts_decompose(AE_major_ts, type = "multiplicative", showline = TRUE)
 ts_decompose(AE_major_ts, type = "both", showline = TRUE)
 
-# 03.03 Seasonal plot
+# 03 Seasonal plot
 # Seasonal plot
 ts_seasonal(AE_major_ts, type = "all")
 
 
-# 03-03 Heatmap plot
+# 04 Heatmap plot
 # We can also produce a heatmap of the AE_major_ts data set 
 ts_heatmap(AE_major_ts)
 
