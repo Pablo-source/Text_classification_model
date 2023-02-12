@@ -2,7 +2,7 @@
 library(TSstudio)
 library(tidyverse) 
 
-# Forecasting with auto.arima
+# Model 01: ARIMA model using auto.arima() function 
 # we use previous train and test sets we defined in the previous script
 
 library(forecast)
