@@ -150,12 +150,15 @@ AE_major_ts_split <- ts_split(
   ts.obj = AE_major_ts, sample.out = 12)
 
 train <- AE_major_ts_split$train
+
 test <- AE_major_ts_split$test
 
 And then we forecast 12 months into the future using ARIMA. The outcome is an **interactive** plotly chart, so it is important to run this code and interact with the chart that the above code produces.
 
 library(forecast)
+
 md <- auto.arima(train)
+
 fc <- forecast(md, h = 12)
 
 # Plotting actual vs. fitted and forecasted
