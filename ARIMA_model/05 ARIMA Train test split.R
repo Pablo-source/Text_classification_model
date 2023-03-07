@@ -11,7 +11,6 @@ library(tidyverse)
 ts_cor(AE_major_ts)
 
 # Split initial AE_majot_ts into TRAIN, TEST sets
-
 AE_major_ts_split <- ts_split(
   ts.obj = AE_major_ts, sample.out = 12)
 
