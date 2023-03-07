@@ -1,0 +1,39 @@
+# A&E Attendances and Emergency Admissions
+# The Weekly and Monthly A&E Attendances and Emergency Admissions collection collects the total number of attendances in the specified period for all A&E types, including Minor Injury Units and Walk-in Centres, and of these, the number discharged, admitted or transferred within four hours of arrival.
+# Also included are the number of Emergency Admissions, and any waits of over four hours for admission following decision to admit.
+# Data are shown at provider organisation level, from NHS Trusts, NHS Foundation Trusts and Independent Sector Organisations.
+
+# https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/
+
+# 1 Import CSV A&E Attendances and Emergency Admissions data downloading it directly from NHS England websie using file URL
+
+# This is an .xls file extension, Excel 97-Excel 2003 Workbook , The Excel 97 - Excel 2003 Binary file format (BIFF8).
+# We can import both .xls and .xlsx file using download.file() function from readxl package
+
+pacman::p_load(readxl,here,dplyr,janitor) 
+
+AE_data <- function()   {
+  
+  if(!dir.exists("data")){dir.create("data")}
+  
+  # England-level time series. d
+  # Download Excel file to a Project sub-folder called "data", to store results
+  # Created previously using an adhoc project structure function
+  
+  xlsFile = "AE_England_data.xls"
+  
+  download.file(
+    url = 'https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/11/Timeseries-monthly-Unadjusted-9kidr.xls',
+    destfile = here("data",xlsFile),
+    mode ="wb"
+  )
+  
+}
+# Download A&E data function (no arguments)
+AE_data()
+
+# Data for ETS model
+
+# ETS (Error, Trend, Seasonal) method is an approach method for forecasting time series univariate. 
+# This ETS model focuses on trend and seasonal components [7]. The flexibility of the ETS model lies. 
+# in its ability to trend and seasonal components of different traits.
